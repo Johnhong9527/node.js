@@ -2,8 +2,8 @@
 #安装express依赖
 ```js
 npm install
-
 ```
+
 #安装项目bower依赖
 ```js
 bower install
