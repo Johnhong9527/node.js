@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font: 12px/1 "Microsoft Yahei", "simsun";
+}
+
+.newbie-guide {
+  border: 1px solid rgb(242, 242, 242);
+  width: 1000px;
+  margin: auto;
+  background-color: white;
+  h2 {
+    margin: 0;
+    margin-left: 30px;
+    padding: 10px 0;
+    font-weight: 600;
+  }
+  .newhand-1, .newhand-2, .newhand-3 {
+    position: relative;
+    border-top: 1px solid rgb(242, 242, 242);
+    height: 331px;
+    padding-left: 50px;
+    & > div {
+      h3 {
+        font-size: 24px;
+        color: #21bbc1;
+        font-weight: 500;
+        margin: 0;
+      }
+      p {
+        color: #999;
+        width: 625px;
+        line-height: 26px;
+      }
+    }
+  }
+  .newhand-1 {
+    & > div {
+      background: url("../src/images/31.png");
+      background-repeat: no-repeat;
+      background-position: 665px 0;
+      margin-top: 97px;
+    }
+  }
+  .newhand-2 {
+    & > div {
+      background: url("../src/images/32.png");
+      background-repeat: no-repeat;
+      background-position: 665px 35px;
+      padding-top: 35px;
+      span {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #302f2f;
+        margin-top: 15px;
+        width: 625px;
+        line-height: 26px;
+        text-align: justify;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .newhand-3 {
+    & > div {
+      margin-top: 30px;
+      width: 90%;
+      img {
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      &>div{
+        color: white;
+        width: 120px;
+        height: 35px;
+        margin: auto;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        line-height: 35px;
+        text-align: center;
+        background-color: rgb(203,41,0);
+      }
+    }
+  }
+
+}

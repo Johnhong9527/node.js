@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: "Microsoft Yahei","simsun";
+
+}
+.newbie-guide {
+  border: 1px solid #f2f2f2;
+  width: 1000px;
+  margin: auto;
+  background-color: white;
+}
+.newbie-guide h2 {
+  margin: 0;
+  margin-left: 20px;
+  padding: 10px 0;
+  font-weight: 100;
+  font-size: 18px;
+}
+.newbie-guide .newhand-1,
+.newbie-guide .newhand-2,
+.newbie-guide .newhand-3 {
+  position: relative;
+  border-top: 1px solid #f2f2f2;
+  height: 331px;
+  padding-left: 50px;
+}
+.newbie-guide .newhand-1 > div h3,
+.newbie-guide .newhand-2 > div h3,
+.newbie-guide .newhand-3 > div h3 {
+  font-size: 24px;
+  color: #21bbc1;
+  font-weight: 500;
+  margin: 0;
+}
+.newbie-guide .newhand-1 > div p,
+.newbie-guide .newhand-2 > div p,
+.newbie-guide .newhand-3 > div p {
+  color: #999;
+  width: 625px;
+  line-height: 26px;
+}
+.newbie-guide .newhand-1 > div {
+  background: url("../src/images/31.png");
+  background-repeat: no-repeat;
+  background-position: 665px 0;
+  margin-top: 97px;
+}
+.newbie-guide .newhand-2 > div {
+  background: url("../src/images/32.png");
+  background-repeat: no-repeat;
+  background-position: 665px 35px;
+  padding-top: 35px;
+}
+.newbie-guide .newhand-2 > div span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #302f2f;
+  margin-top: 15px;
+  width: 625px;
+  line-height: 26px;
+  text-align: justify;
+}
+.newbie-guide .newhand-2 > div p {
+  margin: 0;
+}
+.newbie-guide .newhand-3 > div {
+  margin-top: 30px;
+  width: 90%;
+}
+.newbie-guide .newhand-3 > div img {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.newbie-guide .newhand-3 > div > div {
+  color: white;
+  width: 120px;
+  height: 35px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 35px;
+  text-align: center;
+  background-color: #cb2900;
+}

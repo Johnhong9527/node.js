@@ -1,0 +1,953 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+//时间控件定位
+.calendar {
+  position: absolute;
+  top: 61px;
+  left: 580px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.user-main {
+  width: 1000px;
+  margin: auto;
+  //左侧栏
+  .left-cont {
+    float: left;
+    width: 200px;
+    .user-info {
+      background-color: rgb(203, 41, 0);
+      height: 105px;
+      h3 {
+        margin-left: 15px;
+        padding-top: 16px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      p {
+        margin-left: 15px;
+        color: #fff;
+        margin-top: 10px;
+        font-size: 12px;
+      }
+    }
+    .user-btn {
+      border: 1px solid #ebebeb;
+      background-color: #fff;
+      ul {
+        height: 64px;
+        li {
+          list-style: none;
+          float: left;
+          width: 33.33%;
+          text-align: center;
+          padding-top: 30px;
+          a {
+            width: 100%;
+            padding-top: 30px;
+            color: #a0a0a0;
+            &:hover {
+              color: rgb(203, 41, 0);
+            }
+          }
+        }
+      }
+      .btn-name {
+        background: url("../src/images/user/ic_infor.png") no-repeat center 0;
+      }
+      .btn-pwd {
+        background: url("../src/images/user/ic_pwd.png") no-repeat center 0;
+      }
+      .btn-card {
+        background: url("../src/images/user/ic_card.png") no-repeat center 0;
+      }
+    }
+    .user-side {
+      margin-top: 20px;
+      background-color: #fff;
+      border: 1px solid #ececec;
+      dl {
+        dt {
+          padding: 18px 0 18px 75px;
+          border-bottom: 1px solid #ececec;
+          border-top: 1px solid #ececec;
+          font-size: 14px;
+          cursor: default;
+        }
+        dd {
+          width: 100%;
+          height: 32px;
+          line-height: 32px;
+          text-align: center;
+          a {
+            display: block;
+            width: 100%;
+            color: #a0a0a0;
+            &:hover {
+              color: rgb(203, 41, 0);
+            }
+          }
+        }
+        .found {
+          background: url("../src/images/user/ic_found.png") no-repeat 37px center;
+        }
+        .invest {
+          background: url("../src/images/user/ic_invest.png") no-repeat 37px center;
+        }
+        .proceeds {
+          background: url("../src/images/user/ic_proceeds.png") no-repeat 37px center;
+        }
+      }
+
+    }
+  }
+  //右侧栏
+  .right-cont {
+    float: right;
+    width: 780px;
+  }
+}
+
+.main-tpl {
+  width: 778px;
+  .kan {
+    color: rgb(52, 187, 255);
+    font-size: 12px;
+    padding-left: 15px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .total {
+    background-color: #fff;
+    float: left;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    height: 154px;
+    width: 255px;
+    overflow: hidden;
+    display: inline-block;
+    p {
+      padding-left: 25px;
+    }
+    .total-p1 {
+      color: #999;
+      margin-top: 42px;
+      font-size: 12px;
+      padding-left: 49px;
+      height: 16px;
+      background: url("../src/images/user/ico_question.png") no-repeat 27px center;
+    }
+    .total-p2 {
+      margin-top: 9px;
+      font-size: 28px;
+    }
+  }
+
+  .total-list {
+    background-color: #fff;
+    float: left;
+    width: 523px;
+    height: 153px;
+    p {
+      color: #999;
+      width: 100%;
+      display: inline-block;
+      font-size: 12px;
+      height: 33.7%;
+      line-height: 50px;
+      border: 1px solid #ececec;
+      box-sizing: border-box;
+      padding-left: 49px;
+      background: url("../src/images/user/ico_question.png") no-repeat 27px center;
+      .list-qian {
+        font-size: 18px;
+        color: #000;
+      }
+    }
+
+    .total-btn {
+      cursor: pointer;
+      padding: 8px 11px;
+      border: 1px solid #ececec;
+    }
+    .btn-bg-a {
+      background-color: rgb(247, 247, 247);
+      margin-left: 170px;
+    }
+    .btn-bg-red {
+      background-color: rgb(185, 37, 0);
+      color: #fff;
+    }
+  }
+
+  .total-bottom {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    clear: both;
+    border: 1px solid #ececec;
+    p {
+      height: 40px;
+      line-height: 40px;
+    }
+    span {
+      font-size: 12px;
+      color: #999;
+      .color-red {
+        color: #CB2900;
+        font-size: 18px;
+      }
+    }
+    .bottom-left {
+      float: left;
+      padding-left: 15px;
+    }
+    .bottom-right {
+      float: right;
+      padding-right: 15px;
+    }
+  }
+
+  .total-record {
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    .record-1 {
+      height: 52px;
+      line-height: 51px;
+      background-color: #fff;
+      border: 1px solid #ececec;
+      a {
+        font-size: 14px;
+        display: inline-block;
+        padding: 0 17px;
+      }
+    }
+    .record-type {
+      color: #999;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #ececec;
+      border-top: none;
+      box-sizing: border-box;
+      height: 56px;
+      line-height: 56px;
+      li {
+        margin-right: 5px;
+        height: 24px;
+        line-height: 28px;
+        list-style: none;
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 3px;
+        //background-color:#2BB9BE;
+        &:first-child {
+          padding-left: 17px;
+        }
+      }
+    }
+    .record-class {
+      height: 53px;
+      line-height: 53px;
+      border: 1px solid #ececec;
+      border-top: none;
+      background-color: #fff;
+      li {
+        display: inline-block;
+        padding: 0 33px;
+      }
+    }
+    .record-content {
+      height: 200px;
+      background-color: #fff;
+      p {
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+        text-align: center;
+        background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+      }
+    }
+  }
+}
+
+//充值记录
+.user-date {
+  width: 778px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #999;
+  border: 1px solid #ececec;
+  .date-time {
+    height: 76px;
+    width: 100%;
+    line-height: 76px;
+    padding-left: 19px;
+    box-sizing: border-box;
+  }
+  input {
+    background: url("../src/images/user/pc-18.png") no-repeat 8px center;
+    width: 155px;
+    height: 16px;
+    padding: 12px 0 12px 36px;
+    border: 1px solid #ececec;
+  }
+  .date-type {
+    width: 100%;
+    height: 53px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    ul {
+      li {
+        line-height: 53px;
+        list-style: none;
+        display: inline-block;
+        width: 16%;
+        padding-left: 19px;
+        color: #666;
+      }
+    }
+  }
+  .date-content {
+    height: 200px;
+    background-color: #fff;
+    p {
+      width: 100%;
+      height: 100%;
+      line-height: 200px;
+      text-align: center;
+      background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+    }
+  }
+}
+
+//提现记录
+.user-withdraw {
+  width: 778px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #999;
+  border: 1px solid #ececec;
+  .date-time {
+    height: 106px;
+    width: 100%;
+    line-height: 76px;
+    padding-left: 19px;
+    box-sizing: border-box;
+    p {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  input {
+    background: url("../src/images/user/pc-18.png") no-repeat 8px center;
+    width: 155px;
+    height: 16px;
+    padding: 12px 0 12px 36px;
+    border: 1px solid #ececec;
+  }
+  .date-type {
+    width: 100%;
+    height: 53px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    ul {
+      li {
+        line-height: 53px;
+        list-style: none;
+        display: inline-block;
+        width: 16%;
+        padding-left: 19px;
+        color: #666;
+      }
+    }
+  }
+  .date-content {
+    height: 200px;
+    background-color: #fff;
+    p {
+      width: 100%;
+      height: 100%;
+      line-height: 200px;
+      text-align: center;
+      background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+    }
+  }
+}
+
+//资金记录
+.user-fund {
+  width: 778px;
+  font-size: 14px;
+  .date-time {
+    height: 76px;
+    width: 100%;
+    line-height: 76px;
+    padding-left: 19px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  input {
+    background: url("../src/images/user/pc-18.png") no-repeat 8px center;
+    width: 155px;
+    height: 16px;
+    padding: 12px 0 12px 36px;
+    border: 1px solid #ececec;
+  }
+  .fund-top {
+    height: 114px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    div {
+      width: 33.33%;
+      float: left;
+      .fund-img {
+        padding-left: 43px;
+        background: url("../src/images/user/ico_question.png") no-repeat 20px 15px;
+      }
+      p {
+        color: #999;
+        padding: 18px 25px;
+      }
+      span {
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .fund-main {
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    .record-type {
+      color: #999;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #ececec;
+      border-top: none;
+      box-sizing: border-box;
+      height: 56px;
+      line-height: 56px;
+      li {
+        margin-right: 5px;
+        height: 24px;
+        line-height: 28px;
+        list-style: none;
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 3px;
+        &:hover {
+          background-color: #2BB9BE;
+          color: #fff;
+        }
+        &:first-child {
+          padding-left: 17px;
+          &:hover {
+            background-color: #fff;
+            color: #999;
+          }
+        }
+      }
+    }
+    .record-class {
+      height: 53px;
+      line-height: 53px;
+      border: 1px solid #ececec;
+      border-top: none;
+      background-color: #fff;
+      li {
+        display: inline-block;
+        padding: 0 27px;
+        color: #666;
+      }
+    }
+    .record-content {
+      color: #999;
+      height: 200px;
+      background-color: #fff;
+      p {
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+        text-align: center;
+        background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+      }
+    }
+  }
+
+}
+
+//稳赢贷款
+.wenyingdai {
+  width: 778px;
+  font-size: 14px;
+  .date-time {
+    height: 76px;
+    width: 100%;
+    line-height: 76px;
+    padding-left: 19px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  input {
+    background: url("../src/images/user/pc-18.png") no-repeat 8px center;
+    width: 155px;
+    height: 16px;
+    padding: 12px 0 12px 36px;
+    border: 1px solid #ececec;
+  }
+  .fund-top {
+    height: 114px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    .wenyingdai-title {
+      margin-top: 19px;
+      p {
+        padding: 2px 19px;
+      }
+    }
+    div {
+      width: 33.33%;
+      float: left;
+      .fund-img {
+        padding-left: 43px;
+        background: url("../src/images/user/ico_question.png") no-repeat 20px 15px;
+      }
+      p {
+        color: #999;
+        padding: 18px 25px;
+      }
+      span {
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .fund-main {
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    .record-type {
+      color: #999;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #ececec;
+      border-top: none;
+      box-sizing: border-box;
+      height: 56px;
+      line-height: 56px;
+      li {
+        margin-right: 5px;
+        height: 24px;
+        line-height: 28px;
+        list-style: none;
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 3px;
+        &:hover {
+          background-color: #2BB9BE;
+          color: #fff;
+        }
+        &:first-child {
+          padding-left: 17px;
+          &:hover {
+            background-color: #fff;
+            color: #999;
+          }
+        }
+      }
+    }
+    .record-class {
+      height: 53px;
+      line-height: 53px;
+      border: 1px solid #ececec;
+      border-top: none;
+      background-color: #fff;
+      li {
+        display: inline-block;
+        padding: 0 22px;
+        color: #666;
+      }
+    }
+    .record-content {
+      color: #999;
+      height: 200px;
+      background-color: #fff;
+      p {
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+        text-align: center;
+        background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+      }
+    }
+  }
+
+}
+
+//货币基金
+.huobijijin {
+  width: 778px;
+  font-size: 14px;
+  .fund-top {
+    height: 143px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    .wenyingdai-title {
+      margin-top: 19px;
+      p {
+        padding: 2px 19px;
+      }
+    }
+    div {
+      width: 33.33%;
+      float: left;
+      .fund-img {
+        padding-left: 43px;
+        background: url("../src/images/user/ico_question.png") no-repeat 20px 15px;
+      }
+      p {
+        color: #999;
+        padding: 18px 25px;
+      }
+      span {
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .fund-top > p {
+    clear: both;
+    color: #999;
+    padding-left: 19px;
+    padding-top: 20px;
+  }
+  .fund-main {
+    border: 1px solid #ececec;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    .record-class {
+      height: 53px;
+      line-height: 53px;
+      border-bottom: 1px solid #ececec;
+      border-top: none;
+      background-color: #fff;
+      li {
+        display: inline-block;
+        padding: 0 14px;
+        color: #666;
+      }
+    }
+    .record-content {
+      color: #999;
+      height: 200px;
+      background-color: #fff;
+      p {
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+        text-align: center;
+        background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+      }
+    }
+  }
+}
+
+//其他理财
+.qitalicai {
+  width: 778px;
+  font-size: 14px;
+  .fund-top {
+    height: 143px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    .wenyingdai-title {
+      margin-top: 19px;
+      p {
+        padding: 2px 19px;
+      }
+    }
+    div {
+      width: 33.33%;
+      float: left;
+      .fund-img {
+        padding-left: 43px;
+        background: url("../src/images/user/ico_question.png") no-repeat 20px 15px;
+      }
+      p {
+        color: #999;
+        padding: 18px 25px;
+      }
+      span {
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .fund-top > p {
+    clear: both;
+    color: #999;
+    padding-left: 19px;
+    padding-top: 20px;
+  }
+  .fund-main {
+    border: 1px solid #ececec;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    .record-class {
+      height: 53px;
+      line-height: 53px;
+      border-bottom: 1px solid #ececec;
+      border-top: none;
+      background-color: #fff;
+      li {
+        display: inline-block;
+        padding: 0 41px;
+        color: #666;
+      }
+    }
+    .record-content {
+      color: #999;
+      height: 200px;
+      background-color: #fff;
+      p {
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+        text-align: center;
+        background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+      }
+    }
+  }
+}
+
+//昨日收益
+.zuorishouyi {
+  width: 778px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #999;
+  border: 1px solid #ececec;
+  .date-title {
+    height: 82px;
+    line-height: 31px;
+    width: 100%;
+    padding-left: 19px;
+    box-sizing: border-box;
+    span {
+      color: #666;
+      font-weight: 600;
+    }
+    p {
+      color: #cd2900;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+  .date-type {
+    width: 100%;
+    height: 53px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    ul {
+      li {
+        line-height: 53px;
+        list-style: none;
+        display: inline-block;
+        width: 16%;
+        color: #666;
+      }
+    }
+    .li1 {
+      padding-left: 19px;
+    }
+    .li {
+      margin-left: 166px;
+    }
+  }
+  .date-content {
+    height: 200px;
+    background-color: #fff;
+    p {
+      width: 100%;
+      height: 100%;
+      line-height: 200px;
+      text-align: center;
+      background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+    }
+  }
+}
+
+//累计收益
+.leijishouyi {
+  width: 778px;
+  font-size: 14px;
+  .date-time {
+    height: 76px;
+    width: 100%;
+    line-height: 76px;
+    padding-left: 19px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #999;
+  }
+  input {
+    background: url("../src/images/user/pc-18.png") no-repeat 8px center;
+    width: 155px;
+    height: 16px;
+    padding: 12px 0 12px 36px;
+    border: 1px solid #ececec;
+  }
+  .fund-top {
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    div {
+      width: 33.33%;
+      p {
+        color: #999;
+        padding: 18px 25px;
+      }
+      span {
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .fund-main {
+    border: 1px solid #ececec;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    .record-type {
+      color: #999;
+      cursor: pointer;
+      background-color: #fff;
+      box-sizing: border-box;
+      height: 56px;
+      line-height: 56px;
+      li {
+        margin-right: 5px;
+        height: 24px;
+        line-height: 28px;
+        list-style: none;
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 3px;
+        &:hover {
+          background-color: #2BB9BE;
+          color: #fff;
+        }
+        &:first-child {
+          padding-left: 17px;
+          &:hover {
+            background-color: #fff;
+            color: #999;
+          }
+        }
+      }
+    }
+    .record-class {
+      height: 53px;
+      line-height: 53px;
+      background-color: #fff;
+      border-bottom: 1px solid #ececec;
+      li {
+        display: inline-block;
+        padding: 0 27px;
+        color: #666;
+      }
+    }
+    .record-content {
+      color: #999;
+      height: 200px;
+      background-color: #fff;
+      p {
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+        text-align: center;
+        background: url("../src/images/user/pc-25.png") no-repeat 306px center;
+      }
+    }
+  }
+
+}
+
+.fund-img{
+  cursor: pointer;
+  &:hover{
+    background:url("../src/images/user/ico_question_active.png");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

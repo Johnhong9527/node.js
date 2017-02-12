@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+* a {
+  text-decoration: none;
+}
+body{
+  font-family: "Microsoft Yahei","simsun";
+
+}
+.content {
+  width: 1000px;
+  margin: 30px auto;
+}
+.content .single-c {
+  background: #fff;
+  border: 1px #ebebeb solid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content .single-c .login-title {
+  height: 50px;
+  line-height: 50px;
+}
+.content .single-c .login-title h3 {
+  display: inline;
+  font-size: 18px;
+  font-weight: normal;
+  color: #4b5e6f;
+  margin-left: 20px;
+}
+.content .single-c .login-title h3 span {
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+}
+.content .single-c .single-c-con {
+  border-top: 1px #ebebeb solid;
+}
+.content .single-c .single-c-con .login-banner {
+  float: left;
+  display: inline;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.content .single-c .single-c-con .login-key {
+  float: right;
+  display: inline;
+  margin-right: 89px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 394px;
+}
+.content .single-c .single-c-con .login-key .login-tab-con .login-tab {
+  float: left;
+  display: inline;
+  width: 197px;
+  height: 28px;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  border-bottom: 4px #fff solid;
+}
+.content .single-c .single-c-con .login-key .login-tab-con .login-tab a {
+  color: #000;
+  display: block;
+  width: 197px;
+  height: 28px;
+}
+.content .single-c .single-c-con .login-key .login-tab-con:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0;
+}
+.content .single-c .single-c-con .login-key form .login-k-con {
+  border: 1px #dedede solid;
+  height: 302px;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 {
+  margin-top: 40px;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-txt-i {
+  margin-left: 40px;
+  margin-bottom: 35px;
+  position: relative;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-txt-i span {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #585858;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-txt-i input {
+  background: #fff;
+  font-size: 14px;
+  padding: 11px 3px;
+  width: 226px;
+  border: 1px solid #ccc;
+  height: 16px;
+  line-height: 16px;
+  color: #000;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-txt-i .tip-icon {
+  margin-left: 3px;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-txt-i .login-input-tip {
+  font-size: 13px;
+  color: #ea231f;
+  position: absolute;
+  left: 70px;
+  top: 48px;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-sub {
+  margin-top: 40px;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-sub span {
+  display: block;
+  width: 304px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  background: #cb2900;
+  margin: 0 auto;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-to-sign {
+  width: 304px;
+  text-align: right;
+  font-size: 13px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.content .single-c .single-c-con .login-key form .login-k-con .login-k-1 .login-to-sign a {
+  color: #22c0e7;
+}
+.content .single-c .single-c-con:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0;
+}

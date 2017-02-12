@@ -1,0 +1,52 @@
+<% $.each(list,function(i,item){%>
+<i class="new-icon"></i>
+<h1><%=item.title%></h1>
+<div class="content2-a">
+    <div class="content2-a-1">
+        <p class="financing-amount">融资总额</p>
+
+        <p class="money">
+            ￥
+            <span><%=item.sum%></span>
+        </p>
+    </div>
+    <div class="content2-a-2">
+        <p class="the-yield">收益率</p>
+
+        <p class="the-yield-information">
+            <span><%=item.expect%></span>
+            <i>%</i>
+        </p>
+    </div>
+    <div class="content2-a-3">
+        <p class="investment-cycle">投资周期</p>
+
+        <p class="investment-cycle-day"><%=item.day%></p>
+    </div>
+    <div class="content2-a-4">
+        <p class="beginning-money">起投金额</p>
+
+        <p class="beginning-number">
+            <span><%=item.initial%></span>
+        </p>
+    </div>
+</div>
+<div class="content2-b">
+    <div class="the-breath-day">
+        <p>
+            <i></i>
+            <span>起息日：募集成功后次日开始计算收益</span>
+        </p>
+    </div>
+    <div class="prompt-payments">
+        <p>
+            <i>
+                <span class="return-money">还款至余额账户</span>
+                <span class="diamond-1">◆</span>
+                <span class="diamond-2">◆</span>
+            </i>
+            <span>还款提示：到期还本付息，本项目支持提前还款</span>
+        </p>
+    </div>
+</div>
+<%})%>

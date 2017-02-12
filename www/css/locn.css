@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: "Microsoft Yahei","simsun";
+
+}
+
+.locn-w {
+    background-color: #ffffff;
+}
+
+.locn-clearfix a:hover {
+    border: red solid 1px;
+}
+
+.locn-clearfix:after, .locns-sections:after, .locns-footer:after, .locns-section-r2 > div:last-child > p:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.locn-clearfix:first-child {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.locn-clearfix a {
+    float: left;
+    margin-right: 12px;
+    border: #ebebeb solid 1px;
+    text-decoration: none;
+}
+
+.locn-clearfix a:last-child {
+    margin-right: 0;
+}
+
+.locn-sec {
+    float: left;
+}
+
+.locn-enterprise, .locn-salary, .locn-network {
+    background-color: #ffffff;
+}
+
+.locn-enterprise p, .locn-salary p, .locn-network p {
+    color: #ec6c40;
+    margin-top: 33px;
+    margin-left: 25px;
+}
+
+.locn-sec:first-child {
+    margin-left: 55px;
+}
+
+.locn-enterprise p:last-child, .locn-salary p:last-child, .locn-network p:last-child {
+    color: #999999;
+    margin-top: 8px;
+    margin-left: 25px;
+    padding-bottom: 35px;
+}
+
+.locn-clearfix:last-child {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.locn-sec {
+    margin-top: 60px;
+    padding-bottom: 70px;
+    margin-right: 128px;
+}
+
+.locn-sec:last-child {
+    margin-right: 0;
+}
+
+.locn-font01 {
+    font-size: 38px;
+    color: #4a5d6e;
+    margin-top: 30px;
+}
+
+.locn-font02 {
+    font-size: 16px;
+    color: #424141;
+    margin-top: 12px;
+}
+
+.locns-head {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    border: 1px #ebebeb solid;
+}
+
+.locns-head > h3 {
+    margin-left: 30px;
+}
+
+.locns-head > h3 > a:hover {
+    color: red;
+}
+
+.locns-head > h3 > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.locns-section {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.locns-section > div {
+    float: left;
+    border: 1px #ebebeb solid;
+}
+
+.locns-section > .locns-section-left {
+    width: 608px;
+    height: 495px;
+}
+
+.locns-section {
+    width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.locns-section:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.locns-section > .locns-section-left > p {
+    font-size: 16px;
+    color: #999999;
+    padding-top: 30px;
+    margin: 0 40px;
+    line-height: 35px;
+}
+
+.locns-section-r1, .locns-section-r2 {
+    width: 388px;
+    height: 495px;
+}
+
+.locns-section-head {
+    background: #55bfc4 url(../src/locn-images/a-9.png) no-repeat 17px center;
+    height: 65px;
+    line-height: 65px;
+    color: #ffffff;
+    font-size: 21px;
+    text-indent: 58px;
+    font-weight: normal;
+}
+
+.locns-section-r2 > div:last-child {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0;
+}
+
+.locns-section-r2 > div {
+    margin-left: 58px;
+    margin-top: 25px;
+}
+
+.locns-section-r1 > div {
+    margin-left: 58px;
+    margin-top: 55px;
+}
+
+.locns-section-r1 select, .locns-section-r2 select {
+    width: 209px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.locns-section-r2 a {
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    height: 40px;
+    width: 130px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.locns-section-r2 > div:last-child a:first-child {
+    border: 1px #ddd solid;
+}
+
+.locns-section-r2 > div:last-child a:last-child {
+    color: #ffffff;
+    background-color: #cb2900;
+    margin-left: 30px;
+}
+
+.locns-section-r1 span, .locns-section-r2 span {
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.locns-section-r1 input, .locns-section-r2 input {
+    width: 199px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.locns-section-button a {
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.locns-section-button p {
+    text-align: center;
+}
+
+.locns-section-button {
+    width: 280px;
+    height: 40px;
+    background-color: #cb2900;
+}
+
+.locns-sections {
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 1px #ebebeb solid;
+}
+
+.locns-sections > div {
+    float: left;
+    width: 498px;
+    height: 250px;
+
+}
+
+.locns-sections > div:first-child {
+    box-sizing: border-box;
+    border-right: 1px dashed #ebebeb;
+    border-bottom: 1px dashed #ebebeb;
+}
+
+.locns-sections > div:last-child {
+    box-sizing: border-box;
+    border-left: 1px dashed #ebebeb;
+    border-top: 1px dashed #ebebeb;
+}
+
+.locns-sections > div h3 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.locns-sections > div img {
+    vertical-align: middle;
+}
+
+.locns-sections > div h3 > span {
+    margin-left: 20px;
+}
+
+.locns-sections > div p {
+    font-size: 13px;
+    margin-left: 100px;
+    margin-top: 8px;
+    color: #999;
+}
+
+.locns-footer {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #f2f2f2;
+}
+
+.locns-footer > div {
+    width: 1000px;
+    margin: auto;
+}
+
+.locns-footer > div > div {
+    float: left;
+    padding: 45px;
+}
+
+.locns-footer p {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.locns-footer h3 {
+    font-size: 25px;
+    padding: 40px 0;
+    margin-left: 40px;
+}
+
+.network-section-s {
+    padding-top: 25px !important;
+    line-height: 25px !important;
+}
+
+.network-footer {
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.network-footer h4 {
+    margin: 20px 0 10px 40px;
+}
+
+.network-footer p {
+    margin: 0 0 8px 40px;
+    font-size: 14px;
+    color: #696969;
+}
+
+.network-footer h3 {
+    padding: 40px;
+}
+
+.network-footer-img {
+    text-align: center;
+}
+
+.network-footer > div > div:last-child {
+    padding-bottom: 20px;
+}
+
+.network-footer > div {
+    width: 1000px;
+    margin: auto;
+}
+
+.locns-hidden {
+    display: none;
+}
+
+.locns-show {
+    display: block;
+}

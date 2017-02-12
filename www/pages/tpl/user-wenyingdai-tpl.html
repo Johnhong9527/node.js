@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="../../css/user.css">
+<link rel="stylesheet" href="../../css/lyz.calendar.css">
+<script src="../../components/jquery/dist/jquery.min.js"></script>
+<script src="../../js/lyz.calendar.min.js"></script>
+<div class="wenyingdai">
+    <div class="fund-top clearfix">
+        <div class="wenyingdai-title">
+            <p>稳盈贷总资产（元）：</p>
+              <p>  <small>(待收本金+未结算收益)</small></p>
+            <span>0.00</span>
+        </div>
+        <div>
+            <p title="投资理财产品时花费的本金，随着时间推移，待收本金可能会逐渐变少（比如按月还本的产品）。" class="fund-img">待收本金（元）：</p>
+            <span>0.00</span>
+        </div>
+        <div>
+            <p title="每天计算预估收益，然后按日累计，还款日结转至账户余额。" class="fund-img">未结算收益（元）：</p>
+            <span>0.00</span>
+        </div>
+    </div>
+    <div class="fund-main clearfix">
+        <div class="date-time">
+            时间:
+            <input id="txtBeginDate" readonly=""> -
+            <input id="txtEndDate" readonly="">
+        </div>
+        <ul class="record-type">
+            <li>类型:</li>
+            <li>全部</li>
+            <li>投标中</li>
+            <li>还款中</li>
+            <li>已还款</li>
+        </ul>
+        <ul class="record-class">
+            <li>时间</li>
+            <li>投资项目</li>
+            <li>收益率</li>
+            <li>投资金额（元）</li>
+            <li>预期收益（元）</li>
+            <li>状态</li>
+            <li>投资详情</li>
+        </ul>
+        <div class="record-content">
+            <p>没有符合条件的记录</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    $(function () {
+        $("#txtBeginDate").calendar({
+            controlId: "divDate",                                 // 弹出的日期控件ID，默认: $(this).attr("id") + "Calendar"
+            speed: 200,                                           // 三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认：200
+            complement: true,                                     // 是否显示日期或年空白处的前后月的补充,默认：true
+            readonly: true,                                       // 目标对象是否设为只读，默认：true
+            upperLimit: NaN,                               // 日期上限，默认：NaN(不限制)
+            lowerLimit:NaN,                   // 日期下限，默认：NaN(不限制)
+            callback: function () {                               // 点击选择日期后的回调函数
+
+            }
+        });
+        $("#txtEndDate").calendar();
+    });
+</script>

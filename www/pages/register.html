@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/index.css"/>
+    <!--<script src="../components/jquery/dist/jquery.min.js"></script>-->
+    <script data-main="../js/register.js" src="../components/requirejs/require.js"></script>
+</head>
+<body>
+<!--头部-->
+<header>
+    <div id="top">
+        <div class="header">
+            <div class="header-left">
+                <span class="icon"></span>
+
+                <p class="number">客服热线 400 870 5800</p>
+                <span class="weibo">
+                    <div class="weibo-bg">
+                        <p>点击关注盈盈理财</p>
+                        <a href="">@盈盈理财</a>
+                    </div>
+                </span>
+                <span class="weixin">
+                    <div class="weixin-bg">
+                        <p>扫描关注盈盈理财</p>
+                        <img src="../src/images/erweima.png" alt="盈盈理财二维码"/>
+                    </div>
+                </span>
+                <span class="qq">
+                    <div class="qq-bg">
+                        <p> 盈盈理财投资理财群:</p>
+
+                        <p>盈盈理财三十二号群:</p>
+
+                        <p>283607884</p>
+
+                        <p>申请加入投资理财群时</p>
+
+                        <p>请提供盈盈理财用户名</p>
+                    </div>
+                </span>
+
+                <div class="right">
+                    <p class="font"><a href="./login.html">登陆</a></p>
+
+                    <p class="font"><a href="./register.html">极速注册</a></p>
+
+                    <p class="font"><a href="#">安全中心</a></p>
+
+                    <p class="font"><a href="#">帮助中心</a></p>
+
+                    <p class="font"><a href="#">关于我们</a></p>
+
+                    <p class="font"><a href="#">联系我们</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="left">
+            <span class="logo">
+                <a href=""><img src="../src/images/logo.png" alt="盈盈理财"/></a>
+            </span>
+        </div>
+        <div class="right">
+            <p class="font"><a href="../index.html">首&nbsp;页</a></p>
+
+            <p class="font"><a href="./safetyGuarantee.html">安全保障</a></p>
+
+            <p class="font"><a href="./newbieGuide.html">新手引导</a></p>
+
+            <p class="font"><a href="./locn.html">我要借款</a></p>
+
+            <p class="font"><a href="fangyidai1892.html">我要投资</a></p>
+
+            <p class="font"><a href="./user.html">我的盈盈</a></p>
+        </div>
+    </div>
+    <div class="top-bg">
+        <div class="ng-left"></div>
+        <div class="ng-right"></div>
+    </div>
+</header>
+<!--内容-->
+<div class="content">
+    <div class="single-c">
+        <div class="login-title">
+            <h3>
+                注册盈盈理财
+                <span>
+                    如果您已拥有盈盈理财账号，可点此
+                    <a href="./login.html">登录</a>
+                </span>
+            </h3>
+        </div>
+        <div class="single-c-con">
+            <div class="sign-banner">
+                <p>
+                    <a href=""><img src="../src/images/201512181139470%20(2).jpg" alt=""></a>
+                </p>
+            </div>
+            <div class="sign-key">
+                <div class="sign-k-con">
+                    <div class="sign-k-1">
+                        <form id="sign1Form">
+                            <div class="sign-txt-i" style="margin-top:15px;">
+                                <span>注册账号</span>
+                                <input type="text" id="username" name="username" placeholder="请输入注册账号" maxlength="11">
+                                <span class="tip-icon">
+                                    <img src="../src/images/63.png" id="usernameimg" alt="">
+                                </span>
+                                <p class="sign-input-tip" id="usernametip"></p>
+                            </div>
+                            <div class="sign-txt-i">
+                                <span>注册邮箱</span>
+                                <input type="email" id="email" name="email" placeholder="请输入注册邮箱">
+                                <span class="tip-icon">
+                                    <img src="../src/images/63.png" id="emailimg" alt="">
+                                </span>
+                                <p class="sign-input-tip" id="emailtip"></p>
+                            </div>
+                            <div class="sign-txt-i">
+                                <span>设置密码</span>
+                                <input type="password" id="password" name="password" placeholder="请设置密码">
+                                <span class="tip-icon">
+                                    <img src="../src/images/63.png" id="passwordimg" alt="">
+                                </span>
+                                <p class="sign-input-tip" id="passwordtip"></p>
+                                <p class="code-status"></p>
+                            </div>
+                            <div class="sign-txt-i">
+                                <span>确认密码</span>
+                                <input type="password" id="repassword" name="repassword" placeholder="请确认密码">
+                                <span class="tip-icon">
+                                    <img src="../src/images/63.png" id="repasswordimg" alt="">
+                                </span>
+                                <p class="sign-input-tip" id="repasswordtip"></p>
+                            </div>
+                            <p class="sign-xieyi">
+                                <input type="checkbox" id="i-agree" checked="checked">
+                                <label for="i-agree">
+                                    <span>
+                                        我同意盈盈理财官网
+                                        <a href="">《注册协议》</a>
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="sign-sub">
+                                <span class="sign_submit" style="cursor: pointer;">确认提交</span>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+<footer>
+    <div class="footer-up">
+        <div class="footer-con">
+            <div class="footer-left">
+                <p class="img">
+                    <a href="">
+                        <img src="../src/images/pc-1.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../src/images/pc-2.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../src/images/pc-3.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../src/images/pc-4.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../src/images/pc-5.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../src/images/pc-6.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../src/images/pc-7.png" alt=""/>
+                    </a>
+                    <a href="">
+                        <img src="../src/images/pc-8.png" alt=""/>
+                    </a>
+                </p>
+
+                <p class="font">
+                    <a href="">关于我们</a>
+                    <a href="">新手引导</a>
+                    <a href="">帮助中心</a>
+                    <a href="">合作伙伴</a>
+                    <a href="">安全保障</a>
+                    <a href="">加入我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">网贷之家</a>
+                </p>
+            </div>
+            <div class="footer-right">
+                <p>客服邮箱：kefu@yingyinglicai.com</p>
+
+                <p>客服热线（08:00-23:00）</p>
+
+                <p class="number">400-870-5800</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-down">
+        <p>Copyright © 2013-2016 Hangzhou LongYing Internet Financial Information Technology Co., Ltd. All Rights
+            Reserved. 浙ICP备13015820号-1</p>
+
+        <p>版权所有：杭州龙盈互联网金融信息技术有限公司</p>
+
+        <p><img src="../src/images/gongan.png" alt="公安"/>浙公网安备 33031234525845号</p>
+    </div>
+</footer>
+</body>
+</html>

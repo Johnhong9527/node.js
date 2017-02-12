@@ -1,0 +1,37 @@
+
+<% $.each(list,function(i,item){%>
+<div class="fyd">
+    <i class="icon"></i>
+    <a href="./pages/fangyidai1892.html?prod=<%=item._id%>">
+        <p class="fyd-info-1"><%=item.title%></p>
+
+        <p class="fyd-info-2"> <%=item.initial%></p>
+
+        <p class="fyd-info-3">融资金额（元）</p>
+
+        <p class="fyd-info-4"><%=item.sum%></p>
+
+        <div class="fyd-info-5">
+
+            <div class="fyd-inner-bar-1"></div>
+        </div>
+
+        <p class="fyd-info-6">已融资<i><%=((item.money)/(item.sum)).toFixed(2)%></i>%|剩余<span><%=item.sum-item.money%></span>元</p>
+
+        <div class="fyd-info-7">
+            <div class="fyd-info-l">
+                <p class="fyd-info-a">预期年化</p>
+
+                <p class="fyd-info-b"><span><%=item.expect%></span><i>%</i></p>
+            </div>
+            <div class="fyd-info-r">
+                <p class="fyd-info-a">项目期限 </p>
+
+                <p class="fyd-info-c"><span><%=item.day%></span><i></i></p>
+            </div>
+        </div>
+
+        <p class="fyd-info-8">立即投标</p>
+    </a>
+</div>
+<%})%>
